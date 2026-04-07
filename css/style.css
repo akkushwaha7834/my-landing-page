@@ -9,20 +9,24 @@
 
 :root {
   /* Colors */
-  --primary: #000000; /* Black */
+  --primary: #000000;
+  /* Black */
   --primary-light: #1a1a1a;
-  --secondary: #333333; /* Dark Gray */
+  --secondary: #333333;
+  /* Dark Gray */
   --secondary-hover: #000000;
-  --accent: #555555; /* Medium Gray */
+  --accent: #555555;
+  /* Medium Gray */
   --accent-hover: #222222;
-  --whatsapp: #111111; /* Black for WhatsApp to keep it monochrome */
+  --whatsapp: #111111;
+  /* Black for WhatsApp to keep it monochrome */
   --whatsapp-hover: #333333;
-  
+
   --bg-color: #f8f8f8;
   --text-dark: #111111;
   --text-light: #666666;
   --white: #ffffff;
-  
+
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.65);
   --glass-border: rgba(255, 255, 255, 0.4);
@@ -32,7 +36,7 @@
   /* Gradients */
   --grad-primary: linear-gradient(135deg, #000000 0%, #222222 100%);
   --grad-accent: linear-gradient(135deg, #444444 0%, #111111 100%);
-  
+
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -64,7 +68,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -263,7 +272,8 @@ img {
 .hero-urgency {
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: #333333; /* Dark gray for urgency instead of red */
+  color: #333333;
+  /* Dark gray for urgency instead of red */
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -276,7 +286,7 @@ img {
 
 .hero-image img {
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .floating-card {
@@ -286,7 +296,7 @@ img {
   background: var(--white);
   padding: 1rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -294,9 +304,17 @@ img {
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Trust Bar */
@@ -322,7 +340,8 @@ img {
 
 .trust-item i {
   font-size: 2rem;
-  color: #a3a3a3; /* Light gray */
+  color: #a3a3a3;
+  /* Light gray */
 }
 
 .trust-item h4 {
@@ -351,16 +370,16 @@ img {
   background: var(--white);
   padding: 2.5rem 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   border-color: var(--secondary);
 }
 
@@ -460,13 +479,13 @@ img {
   background: var(--white);
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
 }
 
 .portfolio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-img {
@@ -535,7 +554,7 @@ img {
 .feature-icon {
   width: 40px;
   height: 40px;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
   color: var(--primary);
   border-radius: 50%;
   display: flex;
@@ -590,7 +609,7 @@ img {
   background: var(--white);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .contact-info {
@@ -645,7 +664,7 @@ img {
   outline: none;
   border-color: var(--secondary);
   background: var(--white);
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 textarea.form-control {
@@ -667,7 +686,7 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 999;
   transition: var(--transition);
   animation: pulse 2s infinite;
@@ -679,9 +698,17 @@ textarea.form-control {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(0,0,0,0.3); }
-  70% { box-shadow: 0 0 0 15px rgba(0,0,0,0); }
-  100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 /* Footer */
@@ -703,31 +730,31 @@ footer p {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     margin: 0 auto 2rem;
   }
-  
+
   .hero-cta {
     justify-content: center;
   }
-  
+
   .hero-urgency {
     justify-content: center;
   }
-  
+
   .process-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .process-step:nth-child(2)::after {
     display: none;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-container {
     grid-template-columns: 1fr;
   }
@@ -737,37 +764,53 @@ footer p {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .process-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .process-step::after {
     display: none;
   }
-  
+
   .pricing-hook {
     margin: 2rem 1rem;
     padding: 3rem 1rem;
   }
-  
+
   .pricing-price {
     font-size: 3rem;
   }
-  
-  .contact-info, .contact-form {
+
+  .contact-info,
+  .contact-form {
     padding: 2rem;
   }
-  
+
   .floating-whatsapp {
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
+  }
+
+  .header-wa-btn .wa-text {
+    display: none;
+  }
+
+  .header-wa-btn {
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  .header-wa-btn i {
+    font-size: 1.3rem;
   }
 }
